@@ -12,6 +12,6 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PATCH,DELETE");
   next();
 });
-app.use("/api/v1/data", dataRouter);
+app.use("/", dataRouter);
 
 module.exports = app;
